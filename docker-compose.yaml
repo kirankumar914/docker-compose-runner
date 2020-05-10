@@ -17,7 +17,7 @@ services:
     environment:
       - HUB_HOST=hub
       
-  search-module1:
+  search-module:
     image: kirankumar914/selenium-docker
     depends_on:
       - chrome
@@ -29,7 +29,7 @@ services:
     volumes:
       - .\\output\search-result:/usr/share/DockersTest/test-output
       
-  flight-module1:
+  flight-module:
     image: kirankumar914/selenium-docker
     depends_on:
       - chrome
