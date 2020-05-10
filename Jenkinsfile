@@ -10,7 +10,7 @@ pipeline {
 		stage('run the tests') {
             steps {
                 //sh
-                bat "docker-compose up search-module1 search-module2 flight-module1 flight-module2"
+                bat "docker-compose up search-module flight-module"
             }
         }
     }
